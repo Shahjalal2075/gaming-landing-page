@@ -1,0 +1,123 @@
+/*Shared*/
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+.color-primary{
+    color: #FF42A5;
+}
+
+/* Nav Section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px 150px;
+}
+.menu a{
+    color: #3C354F;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 32px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.follow-btn{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    text-align: center;
+    padding-bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: #3C354F;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 20px;
+}
+.follow-btn img{
+    padding: 0 10px;
+    width: 24px;
+}
+nav a{
+    text-decoration: none;
+}
+.home-btn img{
+    width: 60px;
+    padding-right: 14px;
+}
+.home-btn a{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0B0223;
+}
+/* banner Section */
+.banner-section{
+    padding: 10px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-text{
+    color: #0B0223;
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.banner-title{
+    font-size: 4.1rem;
+    margin-top: -25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+}
+.banner-des{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-img{
+    width: 50%;
+}
+.banner-img img{
+    width: 100%;
+}
+.banner-btn{
+    margin-top: 30px;
+    display: flex;
+}
+.signin-btn{
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: 0;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    margin-right: 20px;
+}
+.go-btn{
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    border: 0;
+}
