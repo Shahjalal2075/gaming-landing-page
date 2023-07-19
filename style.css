@@ -1,9 +1,39 @@
 /*Shared*/
 *{
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+button{
+    cursor: pointer;
 }
 .color-primary{
     color: #FF42A5;
+}
+.sec-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.sec-des{
+    color: #534C64;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 20px;
+}
+.font-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.font-color-2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Nav Section */
@@ -39,7 +69,7 @@ nav{
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    padding: 0 20px;
+    padding: 13px 20px;
 }
 .follow-btn img{
     padding: 0 10px;
@@ -63,6 +93,9 @@ nav a{
     padding: 10px 150px;
     display: flex;
     justify-content: space-between;
+    background-image: url('images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 .banner-content{
     width: 50%;
@@ -76,7 +109,6 @@ nav a{
 }
 .banner-title{
     font-size: 4.1rem;
-    margin-top: -25px;
     font-weight: 800;
     text-transform: uppercase;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -89,6 +121,7 @@ nav a{
     color: #534C64;
     font-size: 1rem;
     font-weight: 600;
+    padding: 5px;
 }
 .banner-img{
     width: 50%;
@@ -120,4 +153,190 @@ nav a{
     text-transform: uppercase;
     padding: 16px 32px;
     border: 0;
+}
+
+/* main section */
+
+
+/*online games section */
+.online-games{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 40px;
+}
+.online-games .sec-des{
+    margin-bottom: 35px;
+}
+.sec-img{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.sec-img .box{
+    width: 25%;
+}
+.sec-img img{
+    width: 100%;
+}
+.img-des{
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* about-section */
+.about{
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec-content{
+    width: 50%;
+    margin-right: 180px;
+    margin-top: 100px;
+}
+.about .sec-title,.about .sec-des{   
+    text-align: right;
+}
+.about-img{
+    width: 50%;
+}
+.about-img .main-img{
+    width: 100%;
+}
+.about-img .moving-img{
+    width: 200px;
+    position: relative;
+    bottom: 170px;
+    right: 90px;
+}
+
+/*Games-menu*/
+.games-menu{
+    margin-top: -90px;
+    padding: 80px 150px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.btn-primary{
+    border-radius: 50px;
+    background: #FFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 600;
+    color: #0B0223;
+    padding-right: 0.3rem;
+    border: 0.125rem solid #FFF;
+}
+.btn-primary img{
+    padding-right: 10px;
+}
+.btn-primary:hover {
+    border: 2px solid #FF42A5;
+}
+
+
+/* Responsive */
+/* Mobile design */
+@media screen and (max-width: 576px){
+    nav, .banner-section{
+        padding: 15px;
+        background-image: none;
+    }
+    .online-games, .about, .games-menu{
+        padding: 20px;
+    }
+    nav, .menu, .sec-img, .about{
+        flex-direction: column;
+        gap: 35px;
+    }
+    .banner-content, .banner-img, .sec-img .box, .sec-content{
+        width: 100%;
+    }
+    .about-img{
+        width: 80%;
+        margin-left: 70px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-btn{
+        justify-content: center;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .sec-content .sec-title,.sec-content .sec-des{
+        text-align: center;
+    }
+    .about{
+        margin-top: -70px;
+    }
+    .about-img .moving-img{
+        width: 150px;
+        bottom: 120px;
+        right: 70px;
+    }
+    .games-menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .games-menu .btn-primary{
+        padding: 10px 5px;
+    }
+    .games-menu .btn-primary img{
+        width: 100%;
+    }
+}
+
+/* Tablet design */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav, .banner-section{
+        padding: 35px;
+        background-image: none;
+    }
+    .online-games, .games-menu{
+        padding: 20px;
+    }
+    .banner-content, .banner-img, .sec-img .box, .sec-content{
+        width: 100%;
+    }
+    .about-img{
+        width: 80%;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .banner-btn{
+        justify-content: center;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+    .sec-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about{
+        flex-direction: column;
+    }
+    .sec-content .sec-title,.sec-content .sec-des{
+        text-align: center;
+    }
+    .about{
+        margin-top: -70px;
+    }
 }
