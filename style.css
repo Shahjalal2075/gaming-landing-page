@@ -179,10 +179,51 @@ nav a{
     width: 100%;
 }
 .img-des{
+    margin-top: 15px;
     color: #534C64;
     font-size: 1rem;
     font-weight: 600;
 }
+
+/*overlay*/
+.overlay img{
+    width: 32px;
+}
+.content{
+    text-align: center;
+}
+.img-box{
+    position: relative;
+}
+.overlay img{
+    margin-top: 120px;
+}
+.overlay h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.60);
+    cursor: pointer;
+}
+.box:hover .overlay{
+    opacity: 1;
+}
+
 
 /* about-section */
 .about{
@@ -283,7 +324,7 @@ footer .home-btn a{
     margin-bottom: 53px;
 }
 .footer-icon img{
-    margin-right: 30px;
+    padding-right: 30px;
 }
 .footer-item ul{
     display: flex;
@@ -316,7 +357,7 @@ footer p{
         padding: 15px;
         background-image: none;
     }
-    .online-games, .about, .games-menu{
+    .online-games, .about, .games-menu,footer{
         padding: 20px;
     }
     nav, .menu, .sec-img, .about{
@@ -342,6 +383,9 @@ footer p{
     .sec-content .sec-title,.sec-content .sec-des{
         text-align: center;
     }
+    .overlay img{
+        margin-top: 200px;
+    }
     .about{
         margin-top: -70px;
     }
@@ -360,6 +404,23 @@ footer p{
     .games-menu .btn-primary img{
         width: 100%;
     }
+    .footer-menu li, .footer-icon img, .footer-item li{
+        padding-right: 0;
+    }
+    .footer-menu ul, .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .footer-icon{
+        margin-left: 70px;
+    }
+    
+    .footer-item ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
 }
 
 /* Tablet design */
@@ -368,7 +429,7 @@ footer p{
         padding: 35px;
         background-image: none;
     }
-    .online-games, .games-menu{
+    .online-games, .games-menu, footer{
         padding: 20px;
     }
     .banner-content, .banner-img, .sec-img .box, .sec-content{
@@ -391,6 +452,9 @@ footer p{
     .sec-img{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .overlay img{
+        margin-top: 180px;
     }
     .about{
         flex-direction: column;
