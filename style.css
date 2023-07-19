@@ -246,6 +246,68 @@ nav a{
     border: 2px solid #FF42A5;
 }
 
+/*footer*/
+footer{
+    background: #0B0223;
+    padding: 85px 150px;
+    align-items: center;
+}
+footer .home-btn{
+    display: block;
+    text-align: center;
+}
+footer .home-btn a{
+    color: #FFF;
+    text-decoration: none;
+}
+.footer-menu ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 47px;
+    margin-bottom: 47px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.footer-menu li{
+    list-style: none;
+    padding-right: 43px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 53px;
+}
+.footer-icon img{
+    margin-right: 30px;
+}
+.footer-item ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+}
+.footer-item li{
+    list-style: none;
+    padding-right: 43px;
+}
+.footer-item a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
 
 /* Responsive */
 /* Mobile design */
